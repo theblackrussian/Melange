@@ -1,4 +1,27 @@
-.DS_STORE
-.env
-modules/scraper/webpages
-modules/youtube/transcripts
+*
+
+# question/
+!question/kwd.py
+!question/qp.py
+!question/qy.py
+# question/config
+!question/config_web/config.py
+!question/config_yt/config.py
+
+# scraper/
+!scraper/scp.py
+!scraper/config/config.py
+
+# summarize/
+!summarize/smy.py
+!summarize/config/config.py
+
+# youtube/
+!youtube/xy.py
+
+# pipenv files
+!Pipefile
+!Pipefile.lock
+
+# Readme.md
+!readme.md
