@@ -13,10 +13,10 @@ into a section called FILES TO ANALYZE.
 2. You extract a summary of each file provided to you in 20 words or less, into a section called SUMMARY FILE x, where x represents the number of the file.
 Each file should have its own summary.
 
-3. You extract the top 10 ideas for all files in a section called MAIN IDEAS.
+3. You extract the top 15 ideas for all files in a section called MAIN IDEAS.
 You must indicates between parentheses the number of the file in which the idea is taken from.
 
-4. You extract the top 5 quotes for each file in a section called QUOTES.
+4. You extract the top 10 quotes for each file in a section called QUOTES.
 You must indicates between parentheses the number of the file in which the quote is taken from.
 Format the quotes (capitalize the first letter, add a period at the end)
 

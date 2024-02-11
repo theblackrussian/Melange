@@ -21,11 +21,16 @@ class YouTubeTranscriptFetcher:
     def save_transcripts(self, transcripts):
         for index, (video_id, transcript) in enumerate(transcripts.items(), start=1):
             filename = f"{video_id}.txt"
-            with open(
-                os.path.join(self.filepath, filename), "w", encoding="utf-8"
-            ) as f:
-                for line in transcript:
-                    f.write(line["text"] + "\n")
+            with open(os.path.join(self.filepath, filename), "w", encoding="utf-8") as f:
+                line_count = 0
+                for entry in transcript:
+                    if line_count % 5 == 0:
+                        # Convert the 'start' seconds to [MM:SS] format
+                        minutes, seconds = divmod(int(entry['start']), 60)
+                        timestamp = f"[{minutes:02d}:{seconds:02d}]"
+                        f.write(timestamp)
+                    f.write(entry["text"] + "\n")
+                    line_count += 1
             print(f"Transcript for video ID {video_id} saved as {filename}")
 
 
