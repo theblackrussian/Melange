@@ -2,6 +2,7 @@ from poe_api_wrapper import PoeApi
 import os
 from config import config
 from prompt import prompt
+import datetime
 from dotenv import load_dotenv
 load_dotenv(
     dotenv_path="/Users/tonda/Documents/Melange/.env"
@@ -42,6 +43,10 @@ print("\n")
 # Purge conversation so context is new every time
 api.purge_conversation(bot=bot, chatId=chat_Id, chatCode=chat_Code)
 
-# Delete all files in the Transcripts directory
-for f in transcript_files:
-    os.remove(f)
+# Function that moves the transcript files to subdirectory for today's date
+# def move_transcripts():
+#     today = datetime.now().strftime("%Y-%m-%d")
+#     for file in transcript_files:
+#         os.rename(file, os.path.join(tdir, today, os.path.basename(file)))
+
+# move_transcripts()

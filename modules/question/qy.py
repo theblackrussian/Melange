@@ -51,5 +51,5 @@ api.purge_conversation(
 )
 
 # Delete all files in the Transcripts directory
-for f in transcript_files:
-    os.remove(f)
+# for f in transcript_files:
+#     os.remove(f)
