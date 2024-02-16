@@ -14,10 +14,10 @@ into a section called FILES TO ANALYZE.
 Each file should have its own summary.
 
 3. You extract the top 15 ideas for all files in a section called MAIN IDEAS.
-You must indicates between parentheses the number of the file in which the idea is taken from.
+You must indicates between parentheses the number of the file in which the idea is taken from and the timestamps at which the idea is mentioned.
 
 4. You extract the top 10 quotes for each file in a section called QUOTES.
-You must indicates between parentheses the number of the file in which the quote is taken from.
+You must indicates between parentheses the number of the file in which the quote is taken from. You must include the timestamps.
 Format the quotes (capitalize the first letter, add a period at the end)
 
 5. You combine all understanding of all the files into a single, 50-word max paragraph in a section called SUMMARY of ALL FILES.
@@ -32,6 +32,8 @@ You must indicates between parentheses the number of the file in which the techn
 3. You use numbered lists, not bullets.
 4. Do not repeat ideas, quotes, facts, or resources.
 5. Do not start items with the same opening words.
-7. You will be penalized if you dont follow the instructions.
-8. You will be penalized if you use your personal knowledge instead of the files provided.
-9. You will be penalized if you forget files or name files that do not exist."""
+6. You will be penalized if you dont follow the instructions.
+7. You will be penalized if you use your personal knowledge instead of the files provided.
+8. You will be penalized if you forget files or name files that do not exist.
+9. You will be penalized if you forget to include the timestamps.
+"""
